@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Booklist | Frenzy</title>
+		<link rel="stylesheet" href="css/min/main.min.css" />
+		<script src="js/fontawesome-free-7.0.1-web/js/all.min.js" crossorigin="anonymous"></script>
+		<script type="module" src="js/src/booklistModule.js"></script>
+		<script src="js/src/responsiveNavModal.js"></script>
+	</head>
+	<body>
+		<div>
+			<div onclick="closeModalNavOther()" id="modalBg" class="sidebar-modalnav-bg"></div>
+			<div id="modalNav" class="sidebar-modalnav-con">
+				<div class="sidebar-modalnav">
+					<i onclick="closeModalNav()" class="fa-solid fa-fw fa-xmark closeModalNav"></i>
+					<a href="index.html" class="brand">FRENZY</a>
+					<ul class="sidebar-modal-con">
+						<li><a class="sidebar-menu" href="waitlist.html">Waitlist</a></li>
+						<li><a class="sidebar-menu" href="booklist.html">Booklist</a></li>
+						<li><a class="sidebar-menu" href="calendar.html">Calendar</a></li>
+					</ul>
+				</div>
+			</div>
+			<nav class="sidebar-responsive">
+				<a href="index.html" class="brand">FRENZY</a>
+				<i onclick="openModalNav()" class="fa-solid fa-fw fa-bars openModalNav"></i>
+			</nav>
+			<aside class="sidebar">
+				<a href="index.html" class="brand">FRENZY</a>
+				<div class="sidebar-menu-con">
+					<a class="sidebar-menu" href="waitlist.html">Waitlist</a>
+					<a class="sidebar-menu" href="booklist.html">Booklist</a>
+					<a class="sidebar-menu" href="calendar.html">Calendar</a>
+				</div>
+			</aside>
+			<div class="content-con">
+				<div class="title-con">
+					<p class="title">Booklist</p>
+					<div class="title-con-right">
+						<i id="notification" class="fa-regular fa-fw fa-bell"></i>
+						<!-- <a class="reload" onclick="changeReloading()"><i class="fa-solid fa-rotate fa-fade fa-fw"></i></a> -->
+					</div>
+				</div>
+				<h3 id="announcement"></h3>
+				<section id="waitlists"></section>
+			</div>
+		</div>
+	</body>
+</html>
