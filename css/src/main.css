@@ -296,22 +296,22 @@ table thead[role='presentation'] tr[role='row'],
 }
 .fc-icon-chevron-right::before {
 	font: var(--fa-font-solid);
-	content: '\f105';
+	content: '>';
 	display: inline-block;
 	vertical-align: bottom;
 }
 .fc-icon-chevron-left::before {
 	font: var(--fa-font-solid);
-	content: '\f104';
+	content: '<';
 	display: inline-block;
 	vertical-align: bottom;
 }
 .fc-today-button:before {
 	font: var(--fa-font-solid);
-	content: '\f783';
+	content: 'HARI INI';
 	display: inline-block;
 	vertical-align: top;
-	font-size: 20.5px;
+	/* font-size: 20.5px; */
 	padding: 2.95px 5px;
 }
 .fc-prev-button.fc-button.fc-button-primary:hover:not(:disabled),
